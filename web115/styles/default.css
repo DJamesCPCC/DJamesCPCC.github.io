@@ -1,0 +1,105 @@
+/*  Fonts   */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --teal: #00a87c
+}
+
+/* Main Body */
+body {
+    margin: 10 px;
+    padding: 10 px;
+
+
+    text-align: center;
+    font-family: 'BebasNeue';
+    font-size: 18px;
+
+
+
+    background-image: url(/web115/images/bg-green.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    image-rendering: pixelated;
+    
+    
+}
+
+header {
+    color: var(--teal);
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+
+main a {
+    color: var(--teal);
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main a:active {
+    color: beige;
+}
+
+main a
+nav {
+    display: block;
+}
+
+td {
+    vertical-align: top;
+}
+
+footer {
+    margin: 50px;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.maintext {
+    width: 40vw;
+    vertical-align: baseline;
+    background-color: #000000dd;
+    border: 2px solid #383838;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+    text-align: left;
+}
+.mainmenu {
+    width: 15vw; 
+    vertical-align: baseline;
+    background-color: #000000dd;
+    border: 2px solid #383838;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+
+}
+
+.mainmenu a {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
