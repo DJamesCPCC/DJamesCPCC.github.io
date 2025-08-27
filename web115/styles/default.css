@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+.tomorrow-regular {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 :root {
     --teal: #00a87c
 }
@@ -16,8 +22,8 @@ body {
 
 
     text-align: center;
-    font-family: 'BebasNeue';
-    font-size: 18px;
+    font-family: 'Tomorrow', "Bebas Neue";
+    font-size: 16px;
 
 
 
@@ -27,12 +33,16 @@ body {
     background-attachment: fixed;
     background-size: 100%;
     image-rendering: pixelated;
-    
-    
+
+
 }
 
 header {
     color: var(--teal);
+}
+
+h2 {
+    color: var(--teal)
 }
 
 table {
@@ -56,8 +66,7 @@ main a:active {
     color: beige;
 }
 
-main a
-nav {
+main a nav {
     display: block;
 }
 
@@ -78,28 +87,60 @@ footer a {
 .maintext {
     width: 40vw;
     vertical-align: baseline;
-    background-color: #000000dd;
-    border: 2px solid #383838;
-    border-radius: 4px;
-    color: #fff;
-    padding: 10px 15px;
-    margin: 5px;
     text-align: left;
 }
-.mainmenu {
-    width: 15vw; 
-    vertical-align: baseline;
-    background-color: #000000dd;
-    border: 2px solid #383838;
-    border-radius: 4px;
-    color: #fff;
-    padding: 10px 15px;
-    margin: 5px;
 
+.mainmenu {
+    width: 15vw;
+    vertical-align: baseline;
 }
 
 .mainmenu a {
     display: block;
     margin-bottom: 10px;
     text-align: left;
+}
+
+.maintext div {
+
+    background-color: #000000dd;
+    border: 2px solid #383838;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+
+}
+
+.mainmenu div {
+    background-color: #000000dd;
+    border: 2px solid #383838;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+}
+
+/* Introduction.html*/
+
+.personalbox figure {
+    text-align: center;
+}
+
+#publicstatement {
+    text-align: center;
+}
+
+.intropicture {
+    width: 300px;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+.famousquote p {
+    text-align: center;
+
 }
