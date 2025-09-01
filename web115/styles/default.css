@@ -11,8 +11,14 @@
     font-style: normal;
 }
 
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
-    --teal: #00a87c
+    --jade: #00a87c
 }
 
 /* Main Body */
@@ -38,11 +44,19 @@ body {
 }
 
 header {
-    color: var(--teal);
+    font-family: "Space Mono";
+    font-size: 30px;
+    color: var(--jade);
 }
 
 h2 {
-    color: var(--teal)
+    font-family: "Space Mono";
+    font-size: 25px;
+    color: var(--jade);
+}
+
+h3 {
+    font-size: 18px;
 }
 
 table {
@@ -54,7 +68,7 @@ table {
 
 
 main a {
-    color: var(--teal);
+    color: var(--jade);
     text-decoration: none;
 }
 
@@ -84,6 +98,8 @@ footer a {
     text-decoration: none;
 }
 
+/* Box Formatting */
+
 .maintext {
     width: 40vw;
     vertical-align: baseline;
@@ -101,7 +117,7 @@ footer a {
     text-align: left;
 }
 
-.maintext div {
+.box {
 
     background-color: #000000dd;
     border: 2px solid #383838;
@@ -110,20 +126,11 @@ footer a {
     padding: 10px 15px;
     margin: 5px;
 
-}
-
-.mainmenu div {
-    background-color: #000000dd;
-    border: 2px solid #383838;
-    border-radius: 4px;
-    color: #fff;
-    padding: 10px 15px;
-    margin: 5px;
 }
 
 /* Introduction.html*/
 
-.personalbox figure {
+.box figure {
     text-align: center;
 }
 
@@ -142,5 +149,43 @@ figure {
 
 .famousquote p {
     text-align: center;
+
+}
+
+/* Brand.html */
+
+#spacemono {
+    font-family: "Space Mono";
+}
+
+.colorpalette div {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+
+.colorswatch {
+    border: 2px solid #383838;
+    border-radius: 10px;
+    padding: 60px;
+}
+
+.colorhex {
+    text-wrap: wrap;
+    width: auto;
+    margin: 0px 15px;
+}
+
+.colordesc {
+    text-wrap: wrap;
+    width: 40%;
+    margin: 0px 15px;
+}
+
+pre {
+
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
 
 }
