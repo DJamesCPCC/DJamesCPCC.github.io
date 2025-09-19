@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">?
+    <link rel="stylesheet" href="styles/prism.css">
+
+    <title>David James' Dapper Jackal ※ Brand Guide</title>
+</head>
+
+<body>
+    <script src="/web115/scripts/prism.js"></script>
+    <header>
+        <h1 class="headtitle">Jackal Gaming ※ Brand Guide</h1>
+    </header>
+    <main>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="maintext">
+                        <div class="box">
+                            <h2 class="boxtitle">🐺"RETRO GAMING FOR THE MODERN WORLD"</h2>
+                            <p>At Jackal Gaming we seek to provide everything you could need to modify your
+                                retro consoles and handhelds. We provide services such as HDMI conversions,
+                                IPS screen replacements, and many more. We also sell parts for those who like
+                                to be hands on with their modifications.
+                            </p>
+                        </div>
+                        <div class="box">
+                            <h2 class="boxtitle">🐺VISUAL IDENTITY</h2>
+                            <h3 class="fonts">FONTS</h3>
+                            <p id="spacemono">The font used for page titles and individual box titles is <strong>Space
+                                    Mono</strong></p>
+                            <p>The font for all other text is <strong>Tomorrow</strong></p>
+                            <h3>COLORS</h3>
+                            <section class="colorpalette">
+                                <div class="colorswatch" style="background-color: white;"></div>
+                                <div class="colorhex">Quartz White<br>HEX: #FFFFFF<br>RGB: 255 255 255</div>
+                                <div class="colordesc">The color used for most text found in the body and footer</div>
+                            </section>
+
+                            <section class="colorpalette">
+                                <div class="colorswatch" style="background-color: var(--jade);"></div>
+                                <div class="colorhex">Jade<br>HEX: #00a87c<br>RGB: 0 168 124</div>
+                                <div class="colordesc">The color used for all page and box titles as well as links</div>
+                            </section>
+
+                            <section class="colorpalette">
+                                <div class="colorswatch" style="background-color: black;"></div>
+                                <div class="colorhex">Black<br>HEX: #000000<br>RGB: 0 0 0</div>
+                                <div class="colordesc">The color used for the backgound of all sections</div>
+                            </section>
+
+                        </div>
+                        <div class="box">
+                            <h2 class="boxtitle">🐺CSS STYLE</h2>
+                            <p>This snippet of CSS controls the fomatting of the boxes on each page</p>
+                            <div class="codeblock">
+<pre><code class="language-css">/* Box Formatting */
+                                        
+.maintext {
+    width: 40vw;
+    vertical-align: baseline;
+    text-align: left;
+}
+
+.mainmenu {
+    width: 15vw;
+    vertical-align: baseline;
+}
+
+.mainmenu a {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.box {
+    
+    background-color: #000000dd;
+    border: 2px solid #383838;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+    
+}
+</code></pre>
+
+                            </div>
+                        </div>
+                    </td>
+                    <td class="mainmenu">
+                        <div class="box">
+                            <h2 class="boxtitle">🐺QUICK LINKS</h2>
+                            <nav>
+                                <a href="https://djamescpcc.github.io">▷Main</a>
+                                <a href="https://djamescpcc.github.io/web115">▷Home</a>
+                                <a href="https://djamescpcc.github.io/web115/introduction">▷Introduction</a>
+                                <a href="https://djamescpcc.github.io/web115/contract">▷Contract</a>
+                                <a href="https://djamescpcc.github.io/web115/brand">▷Brand</a>
+                                <a>*Assignments Comming Soon*</a>
+                            </nav>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+<footer>
+    <script src="scripts/main.js"></script>
+    <div w3-include-html="footer-template.html"></div>
+    <script>includeHTML();</script>
+</footer>
+</body>
+
+</html>
