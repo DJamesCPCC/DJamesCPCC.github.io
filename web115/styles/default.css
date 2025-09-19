@@ -37,7 +37,8 @@ body {
     background-color: #fff;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center center;
     image-rendering: pixelated;
 
 
@@ -187,5 +188,8 @@ pre {
     border: 1px solid #fff;
     border-radius: 10px;
     color: #fff;
+    height: 700px;
+    width: auto;
+    overflow: scroll;
 
 }

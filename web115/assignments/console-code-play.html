@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">?
+    <link rel="stylesheet" href="../styles/prism.css">
+
+    <title>David James' Dapper Jackal ※ Console/Code Play</title>
+</head>
+
+<body>
+    <script src="/web115/scripts/prism.js"></script>
+    <header>
+        <h1 class="headtitle">Jackal Gaming ※ Console/Code Play</h1>
+    </header>
+    <main>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="maintext">
+                        <div class="box">
+                            <h2 class="boxtitle">🐺INPUT & OUTPUT</h2>
+                                <div class="codeblock">
+                                    <pre><code class="language-js">
+> let x = 5; x
+< 5
+
+> const y = 10; y
+< 10
+
+> let z = x + y; z
+< 15
+
+> x++; x
+< 6
+
+> y === 10;
+< true
+
+> let message = "Hello World"
+< undefined
+
+> console.log(message);
+< Hello World
+
+> let name = "David";
+< undefined
+
+> name.charAt(3);
+< 'i'
+
+> if (x > y){
+    console.log("x is greater");
+} else {console.log("y is greater or equal");}
+< 'y is greater or equal'
+
+> let p1 = 10; let p2 = 25;
+< undefined
+
+> let winner = p1 > p2 ? "p1 wins" : "p2 wins"; winner;
+< 'p2 wins'
+
+> let isActive = true;
+< undefined
+
+> if (!isActive) console.log("Inactive");
+< undefined
+
+> let i = 0; while (i < 10){
+    console.log(i);
+    i++;
+  }
+  0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+< 9
+
+> Math.pow(4,4);
+< 256
+
+> Math;
+  E: 2.718281828459045
+  LN2: 0.6931471805599453
+  LN10: 2.302585092994046
+  LOG2E: 1.4426950408889634
+  LOG10E: 0.4342944819032518
+  PI: 3.141592653589793
+  SQRT1_2: 0.7071067811865476
+  SQRT2: 1.4142135623730951
+  abs: ƒ abs()
+  acos: ƒ acos()
+  acosh: ƒ acosh()
+  asin: ƒ asin()
+  asinh: ƒ asinh()
+  atan: ƒ atan()
+  atan2: ƒ atan2()
+  atanh: ƒ atanh()
+  cbrt: ƒ cbrt()
+  ceil: ƒ ceil()
+  clz32: ƒ clz32()
+  cos: ƒ cos()
+  cosh: ƒ cosh()
+  exp: ƒ exp()
+  expm1: ƒ expm1()
+  f16round: ƒ f16round()
+  floor: ƒ floor()
+  fround: ƒ fround()
+  hypot: ƒ hypot()
+  imul: ƒ imul()
+  log: ƒ log()
+  log1p: ƒ log1p()
+  log2: ƒ log2()
+  log10: ƒ log10()
+  max: ƒ max()
+  min: ƒ min()
+  pow: ƒ pow()
+  random: ƒ random()
+  round: ƒ round()
+  sign: ƒ sign()
+  sin: ƒ sin()
+  sinh: ƒ sinh()
+  sqrt: ƒ sqrt()
+  tan: ƒ tan()
+  tanh: ƒ tanh()
+  trunc: ƒ trunc()
+  Symbol(Symbol.toStringTag): "Math"
+< [[Prototype]]: Object
+
+> typeof(255);
+< 'number'
+
+> typeof(Math.PI);
+< 'number'
+
+> typeof("Java is fun");
+< 'string'
+
+> let word = "Ball"; typeof(word.charAt(1));
+< 'string'
+
+> let numbers = [1,2,3,4]; numbers;
+< (4) [1,2,3,4]
+
+> numbers.push(5); numbers;
+< (5) [1,2,3,4,5]
+
+> numbers.pop(); numbers;
+< (4) [1,2,3,4]
+
+> numbers.forEach(num => console.log(num))
+  1
+  2
+  3
+< 4
+
+> let person = {name:'David', age:23,state:"North Carolina"}; person;
+< {name: 'David', age: 23, state: 'North Carolina'}
+
+> console.log(person.name);
+< David
+
+> person.city = "Charlotte"; person;
+< {name: 'David' , age: 23, state: 'North Carolina', city: 'Charlotte'}
+
+> delete person.state; person;
+< {name: 'David' , age: 23, city: 'Charlotte'}
+
+> let keys = Object.keys(person); keys
+< (3) ['name', 'age', 'state']
+
+> let values = Object.values(person); values;
+< (3) ['David', 23, 'North Carolina']
+
+> function greet(name) { return `Hello ${name}`; }
+< undefined
+
+> console.log(greet("Steve"));
+< Hello Steve
+
+> const sqrt = n => n * n;
+< undefined
+
+> sqrt(12);
+< 144
+
+> function foo(){ console.log("This is a function")};
+< undefined
+
+> foo();
+< This is a function
+
+> function drawTriangle(height){
+  for (let i = 1; i <= height; i++){ 
+      let row=""; 
+      // add leading spaces 
+      for (let j=0; j < height - i; j++){
+          row +=" "; 
+      }
+      // add zeros 
+      for (let k=0; k < 2 * i - 1; k++){
+          row +="0"; 
+      } 
+      console.log(row);
+      } 
+  }
+< undefined
+
+> drawTriangle(5);
+      0
+     000
+    00000
+   0000000
+< 000000000
+
+> let now = new Date();
+< undefined
+
+> now;
+< Wed Sep 10 2025 10:12:22 GMT-0400 (Eastern Daylight Time)
+
+> let year = now.getFullYear();
+< undefined
+
+> year;
+< 2025
+
+> let english = {professor:"Mr. Smith",code:"ENG-111",section:'03'};
+< undefined
+
+> JSON.stringify(class)
+< '{"professor":"Mr. Smith","code":"ENG-111","section":"03"}'
+
+> let run = 1
+< undefined
+
+> while (run === 1){
+    run = parseInt(prompt("This is an infinate loop. Press 1 to continue: "))
+}
+< NaN
+
+> alert("HELP ME!!!!");
+< undefined
+
+> Math.ramdon() * 10;
+< 8.246289035772032
+
+> 34 % 4
+< 2
+</code></pre>
+
+
+
+</div>
+                        
+                    </td>
+                    <td class="mainmenu">
+                        <div class="box">
+                            <h2 class="boxtitle">🐺QUICK LINKS</h2>
+                            <nav>
+                                <a href="https://djamescpcc.github.io">▷Main</a>
+                                <a href="https://djamescpcc.github.io/web115">▷Home</a>
+                                <a href="https://djamescpcc.github.io/web115/introduction">▷Introduction</a>
+                                <a href="https://djamescpcc.github.io/web115/contract">▷Contract</a>
+                                <a href="https://djamescpcc.github.io/web115/brand">▷Brand</a>
+                                <a>*Assignments Comming Soon*</a>
+                            </nav>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <script src="../scripts/main.js"></script>
+        <div w3-include-html="../footer-template.html"></div>
+        <script>includeHTML();</script>
+    </footer>
+</body>
+
+</html>
