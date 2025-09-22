@@ -1,3 +1,4 @@
+/* Script used to embed .html pages inside other .html pages*/
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
@@ -24,4 +25,9 @@ function includeHTML() {
       return;
     }
   }
+}
+
+function welcomeUser(firstName, middleInit, lastName) {
+
+  
 }

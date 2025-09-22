@@ -193,3 +193,14 @@ pre {
     overflow: scroll;
 
 }
+
+/* Forms */
+input {
+    background-color: #383838;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    color:#fff
+
+}
