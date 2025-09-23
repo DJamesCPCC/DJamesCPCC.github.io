@@ -26,8 +26,3 @@ function includeHTML() {
     }
   }
 }
-
-function welcomeUser(firstName, middleInit, lastName) {
-
-  
-}

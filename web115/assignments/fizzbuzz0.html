@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/default.css">
+    <link rel="stylesheet" type="text/css" href="web115/styles/default.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,12 +14,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anta&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-
+    <script src="/web115/scripts/main.js"></script>
+    <script src="/web115/scripts/fizzbuzz.js" defer></script>
     <title>David James' Dapper Jackal ※ Fizz Buzz 0</title>
 </head>
 
 <body>
-    <script src="/web115/scripts/prism.js"></script>
     <header>
         <h1 class="headtitle">Jackal Gaming ※ Fizz Buzz 0</h1>
     </header>
@@ -28,22 +29,24 @@
                 <tr>
                     <td class="maintext">
                         <div class="box">
-                            <h2 class="boxtitle">🐺WELCOME TO JACKAL GAMING</h2>
-                            <form action="/action_page.php" method="get" id="user_info_form">
+                            <h2 class="boxtitle" id="welcome_message">🐺WELCOME TO JACKAL GAMING</h2>
+                            <form id="user_info_form">
                                 <label for="first_name">First Name:</label><br>
-                                <input type="text" id="first_name" name="first_name" required placeholder="Enter your First Name here"><br>
-                                <label for="middle_inital">Middle Initial:</label><br>
-                                <input type="text" id="middle_inital" name="middle_inital" placeholder="Enter your Middle Initial here"><br>
+                                <input type="text" id="first_name" name="first_name" required
+                                    placeholder="Enter your First Name here"><br>
+                                <label for="middle_initial">Middle Initial:</label><br>
+                                <input type="text" id="middle_initial" name="middle_inital"
+                                    placeholder="Enter your Middle Initial here" maxlength="1"><br>
                                 <label for="last_name">Last Name:</label><br>
-                                <input type="text" id="last_name" name="last_name" required placeholder="Enter your Last Name here"><br>
+                                <input type="text" id="last_name" name="last_name" required
+                                    placeholder="Enter your Last Name here"><br>
+                                <button type="submit" value="Submit">Submit</button>
                             </form>
-                            <button onClick="" type="submit" form="user_info_form" value="Submit">Submit</button>
                         </div>
                     </td>
                     <td class="mainmenu">
                         <div class="box">
                             <h2 class="boxtitle">🐺QUICK LINKS</h2>
-                            <script src="/web115/scripts/main.js"></script>
                             <div w3-include-html="/web115/navigation.html"></div>
                             <script>includeHTML();</script>
                         </div>
@@ -53,7 +56,6 @@
         </table>
     </main>
     <footer>
-        <script src="/web115/scripts/main.js"></script>
         <div w3-include-html="/web115/footer-template.html"></div>
         <script>includeHTML();</script>
     </footer>
