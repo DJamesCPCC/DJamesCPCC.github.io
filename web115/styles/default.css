@@ -194,6 +194,12 @@ pre {
 
 }
 
+/* Assignments */
+#fizzbuzz-list li {
+    list-style: none;
+    margin-left: -35px;
+}
+
 /* Forms */
 input[type=text] {
     background-color: #383838;
@@ -223,5 +229,13 @@ button:active {
     color: #fff;
 }
 
+/* FizzBuzz 0 */
+ol {
+    padding-left: 40px;
+}
+ol li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
 
 
