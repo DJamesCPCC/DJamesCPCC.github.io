@@ -214,6 +214,18 @@ input[type=text] {
 
 }
 
+input[type=number] {
+    background-color: #383838;
+    width:auto;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    color: #fff;
+    border: 2px solid #383838;
+    border-radius: 4px;
+
+}
+
 button {
     width: 100px;
     height: 30px;
@@ -229,13 +241,39 @@ button:active {
     color: #fff;
 }
 
-/* FizzBuzz 0 */
+fieldset {
+    margin: 10px auto;
+    border: 2px groove #383838;
+}
+
+legend {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* FizzBuzz 0*/
 ol {
     padding-left: 40px;
 }
+
 ol li {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
+/* FizzBuzz 4 */
+#fizzbuzz-settings label {
+    padding: 10px;
+    align-items: center;
+}
+#fizzbuzz-settings input[type=number] {
+    width: 10%;
+}
+#fizzbuzz-settings input[type=text] {
+    width: 25%;
+}
 
+#fizzbuzz-settings section {
+    display:flex;
+    
+}
