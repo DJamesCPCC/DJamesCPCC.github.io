@@ -1,2 +1,12 @@
-# DJamesCPCC.github.io
-Repository for WEB115
+# DJamesCPCC Web Markup and Scripting
+Repository for my WEB115 class.
+
+[Click here][sitelink] for access to my site.
+
+Class Timeline:
+Assignment | Date Completed | Link
+-----------|----------------|------
+M01-GH Home Pages| - | [link][1]
+
+[sitelink]: DJamesCPCC.github.io
+[1]: DJamesCPCC.github.io/web115/index.html
