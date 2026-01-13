@@ -8,5 +8,5 @@ Assignment | Date Completed | Link
 -----------|----------------|------
 M01-GH Home Pages| - | [link][1]
 
-[sitelink]: DJamesCPCC.github.io
-[1]: DJamesCPCC.github.io/web115/index.html
+[sitelink]: https://DJamesCPCC.github.io
+[1]: https://DJamesCPCC.github.io/web115/index.html
