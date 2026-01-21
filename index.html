@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link href="css/style.css" rel="stylesheet">
+    <div data-include="./web115/components/head.html" data-replace="%title%:David James Home"></div>
   </head>
+  <header>
+    <div data-include="./web115/components/header.html" data-replace="%header%:David James' Dapper Jackal, %page-name%:Home"></div>
+    <div data-include="./web115/components/navbar.html"></div>
+  </header>
   <body>
      <main>
-       <h2>Home</h2>
        <p>Hello! My name is David and I am currently a senior at CPCC on track to get
        my degree in App. Dev & Data Analysis.</p>
-       <a href="./web115/index.html">CLICK HERE</a> to go to my WEB115 course
-     </main> 
+       <p><a href="./web115/index.html">CLICK HERE</a> to go to my WEB115 course</p>
+     </main>
+     <footer>
+       <div data-include="./web115/components/footer.html"></div>
+     </footer>
+     <script src="./web115/scripts/HTMLInclude.js"></script>
+     <script>includeHTML();</script>
   </body>
 </html>
 
