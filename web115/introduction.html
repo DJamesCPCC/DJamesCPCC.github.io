@@ -2,79 +2,93 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>David James' Dapper Jackal - N850 Introduction</title>
-  <link href="./styles/default.css" rel="stylesheet">
+  <div data-include="./components/head.html" data-replace="%title%:David James' Dapper Jackal Home"></div>
 </head>
 
 <body>
   <header>
-    <h1>David James' Dapper Jackal - N850</h1>
-    <h2>Introduction</h2>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./introduction.html">Indtroduction</a>
-      <a href="./contract.html">Contract</a>
-      <a href="./brand.html">Brand</a>
-    </nav>
+    <section class="header-container">
+      <div data-include="./components/header.html" data-replace="%header%:David James' Dapper Jackal - N850"></div>
+    </section>
   </header>
 
   <main>
-    <p id="public-acknowledgement">I understand that what I put her is publicly available on the web, and I won’t put
-      anything here I don't want the public to see. - DDJ 01/15/2026</p>
-    <figure>
-      <img id="intro-photo" src="./images/6432087B-820D-472D-9664-D0583C22913C.jpeg" alt="Photo of me and my friends">
-      <figcaption>Photo of me and my friends</figcaption>
-    </figure>
-    <ul>
-      <li><strong>Personal Background: </strong>Hey, my name is David. I am in my final semester at CPCC, working
-        towards an IT
-        –
-        App. Dev & Data Analysis degree. I love collecting vinyl records and playing video games with my friends.
-        Programming has always been a passion of mine since I was a kid, and I hope to be able to do it for the rest of
-        my life. To me, programming is an art from just like painting or poetry; the best programmers can create unique
-        solutions to problems, either using existing tools or new ones from scratch. </li>
-      <li><strong>Professional Background: </strong>Until recently, I have worked either full-time or part-time at
-        Chipotle.
-      </li>
-      <li><strong>Academic Background: </strong>I started my college career at East Carolina University in their
-        computer
-        science program
-        brefore coming back to Charlotte and enrolling in CPCC.</li>
-      <li><strong>Background in this Subject: </strong>I have to retake this class from a previous semester.</li>
-      <li><strong>Primary Computer Platform: </strong>HP Desktop running Windows and ArchLinux via Virtual Machine.</li>
-      <li><strong>Courses I'm Taking & Why:</strong>
-        <ol>
-          <li><strong>WEB115 - Web Markup & Scripting: </strong>Required for my degree. I think it's fun to code
-            websites</li>
-          <li><strong>CSC251 - Advanced JAVA Programming: </strong>Required for my degree. I want to further develop my
-            skills in Java.</li>
-          <li><strong>CTS118 - IS Professional Comm: </strong>Required for my degree</li>
-        </ol>
-      </li>
-      <li><strong>Funny/Interesting Item to Remember me by: </strong>I am the middle child of my family.</li>
-    </ul>
-    <p id="intro-quote"><q>You don't have to be a man to fight for freedom. All you have to do is be an intelligent
-        human
-        being.</q><br>
-      - Malcolm X</p>
-
-
+    <table>
+      <tr>
+        <td class="main-text">
+          <div class="box">
+            <h2 class="box-title">Introduction</h2>
+            <p id="public-acknowledgement">I understand that what I put her is publicly available on the web, and I
+              won’t put
+              anything here I don't want the public to see. - DDJ 01/15/2026</p>
+            <figure>
+              <img id="intro-photo" src="./images/6432087B-820D-472D-9664-D0583C22913C.jpeg"
+                alt="Photo of me and my friends">
+              <figcaption>Photo of me and my friends</figcaption>
+            </figure>
+          </div>
+          <div class="box">
+            <h2 class="box-title">Personal Background</h2>
+            Hey, my name is David. I am in my final semester at CPCC, working
+            towards an IT – App. Dev & Data Analysis degree. I love collecting vinyl records and playing video games
+            with my friends.
+            Programming has always been a passion of mine since I was a kid, and I hope to be able to do it for the rest
+            of
+            my life. To me, programming is an art from just like painting or poetry; the best programmers can create
+            unique
+            solutions to problems, either using existing tools or new ones from scratch.
+          </div>
+          <div class="box">
+            <h2 class="box-title">Academic Background</h2>
+            <p>I started my college career at East Carolina University in their
+              computer science program before coming back to Charlotte and enrolling in CPCC.</p>
+          </div>
+          <div class="box">
+            <h2 class="box-title">Professional Background</h2>
+            <p>I have worked either full-time or part-time at
+            Chipotle.</p>
+          </div>
+          <div class="box">
+            <h2 class="box-title">Background in this Subject</h2>
+            <p>I have to retake this class form aprevious semester.</p>
+          </div>
+          <div class="box">
+            <h2 class="box-title">Primary Computer Platform</h2>
+            <p>HP Desktop running Windows and Arch Linux via Virtual Machine.</p>
+          </div>
+          <div class="box">
+            <h2 class="box-title">Courses I'm Taking & Why</h2>
+            <ol>
+              <li><strong>WEB115 - Web Markup & Scripting: </strong>Required for my degree. I think it's fun to code
+                websites</li>
+              <li><strong>CSC251 - Advanced JAVA Programming: </strong>Required for my degree. I want to further develop my
+                skills in Java.</li>
+              <li><strong>CTS118 - IS Professional Comm: </strong>Required for my degree</li>
+            </ol>
+          </div>
+          <div class="box">
+            <h2 class="box-title">Funny/Interesting thing to Remember me by</h2>
+            <p>I am the middle child of my family</p>
+          </div>
+          <div class="box">
+            <h2 class="box-title">Famous Quote</h2>
+            <p id="intro-quote"><q>You don't have to be a man to fight for freedom. All you have to do is be an intelligent human being</q></p>
+            <p>- Malcolm X</p>
+          </div>
+        </td>
+        <td class="navbar">
+          <div class="box">
+            <h2 class="box-title">Quick Links</h2>
+            <div data-include="./components/navbar.html"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
   </main>
-
   <footer>
-    <nav>
-      <a href="https://github.com/DJamesCPCC/DJamesCPCC.github.io">Github</a> |
-      <a href="https://djamescpcc.github.io/">Github.io</a> |
-      <a href="https://www.codecademy.com/profiles/ddjamesCPCC">codeacademy</a> |
-      <a href="https://www.freecodecamp.org/djamescpcc">freeCodeCamp</a> |
-      <a href="https://jsfiddle.net/u/SlimeDev18/fiddles/">JSFiddle</a> |
-      <a href="https://www.linkedin.com/in/david-james-b59937246/">LinkedIn</a>
-    </nav>
-    <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
-    <p>Page build by SlimeDev Designs LLC.</p>
+    <div data-include="./components/footer.html"></div>
   </footer>
+  <script src="./scripts/HTMLInclude.js"></script>
+  <script>includeHTML()</script>
 </body>
-
 </html>

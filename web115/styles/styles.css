@@ -1,0 +1,154 @@
+/* Fonts */
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tomorrow-regular {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Custom Colors */
+:root {
+  --libra-blue: #0191f5;
+  --pale-skyblue: #e3f3ff;
+}
+
+/* Body */
+body {
+  width: 70%;
+  margin: 25px auto;
+  font-family: "Tomorrow";
+  background-color: var(--pale-skyblue);
+}
+
+a {
+  color: var(--libra-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Space Mono", 'Times New Roman', Times, serif;
+  color: var(--libra-blue);
+}
+
+/* Main */
+
+h1,
+h2,
+h3 {
+  font-family: "Space Mono";
+  color: var(--libra-blue);
+}
+
+/* Table Formatting */
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+td {
+  vertical-align: top;
+}
+
+.box {
+  background-color: #ffffffaf;
+  border: 2px solid #383838;
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin: 5px;
+}
+
+.box-title {
+  margin: 0;
+}
+
+.maintext {
+  width: 40%;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.mainmenu {
+  width: 15%;
+  vertical-align: baseline;
+}
+
+.navbar {
+  width: 20%;
+  position: sticky;
+}
+
+.navbar nav a {
+  display: block;
+}
+
+/* Footer */
+footer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Space Mono", 'Times New Roman', Times, serif;
+}
+
+/* introduction.html */
+#public-acknowledgement {
+  text-align: center;
+  font-style: italic;
+}
+
+#intro-photo {
+  width: 300px;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+q {
+  font-style: italic;
+}
+
+/* brand.html */
+
+#spacemono {
+  font-family: "Space Mono";
+}
+
+.colorpalette div {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-bottom: 15px;
+}
+.colorswatch {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 60px;
+}

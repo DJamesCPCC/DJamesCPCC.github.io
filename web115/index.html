@@ -2,43 +2,43 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>David James' Dapper Jackal - N850 - Web115 Home</title>
-  <link href="./styles/default.css" rel="stylesheet">
+  <div data-include="./components/head.html" data-replace="%title%:David James' Dapper Jackal Home"></div>
 </head>
 
 <body>
   <header>
-    <h1>David James' Dapper Jackal - N850</h1>
-    <h2>Home</h2>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./introduction.html">Indtroduction</a>
-      <a href="./contract.html">Contract</a>
-      <a href="./brand.html">Brand</a>
-    </nav>
+    <section class="header-container">
+      <div data-include="./components/header.html" data-replace="%header%:David James' Dapper Jackal - N850"></div>
+    </section>
   </header>
-  <main>
-    <h2>Home</h2>
-    <p>Welcome! My name is David, this is the homepage for my WEB115 class. Please feel free to look around.<br>
-      You can read more about me <a href="./introduction.html">here.</a><br><br>
 
-      You can also find links to my personal accounts below.<br>
-      - Thank you.</p>
+  <main>
+    <table>
+      <tr>
+        <td class="main-text">
+          <div class="box">
+            <h2 class="box-title">Home</h2>
+            <p>Welcome! My name is David, this is the homepage for my WEB115 class. Please feel free to look around.
+              You can read more about me <a href="./introduction.html">here.</a></p>
+
+            <p>You can also find links to my personal accounts below.<br>
+              - Thank you.</p>
+          </div>
+        </td>
+        <td class="navbar">
+          <div class="box">
+            <h2 class="box-title">Quick Links</h2>
+            <div data-include="./components/navbar.html"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
   </main>
   <footer>
-    <nav>
-      <a href="https://github.com/DJamesCPCC/DJamesCPCC.github.io">Github</a> |
-      <a href="https://djamescpcc.github.io/">Github.io</a> |
-      <a href="https://www.codecademy.com/profiles/ddjamesCPCC">codeacademy</a> |
-      <a href="https://www.freecodecamp.org/djamescpcc">freeCodeCamp</a> |
-      <a href="https://jsfiddle.net/u/SlimeDev18/fiddles/">JSFiddle</a> |
-      <a href="https://www.linkedin.com/in/david-james-b59937246/">LinkedIn</a>
-    </nav>
-    <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
-    <p>Page build by SlimeDev Designs LLC.</p>
+    <div data-include="./components/footer.html"></div>
   </footer>
+  <script src="./scripts/HTMLInclude.js"></script>
+  <script>includeHTML()</script>
 </body>
 
 </html>

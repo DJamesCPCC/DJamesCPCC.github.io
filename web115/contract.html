@@ -2,49 +2,50 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>David James' Dapper Jackal - N850 - Web115 Contract</title>
-  <link href="./styles/default.css" rel="stylesheet">
+  <div data-include="./components/head.html" data-replace="%title%:David James' Dapper Jackal Contract"></div>
 </head>
 
 <body>
   <header>
-    <h1>David James' Dapper Jackal - N850</h1>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./introduction.html">Indtroduction</a>
-      <a href="./contract.html">Contract</a>
-      <a href="./brand.html">Brand</a>
-    </nav>
+    <div data-include="./components/header.html" data-replace="%header%:David James' Dapper Jackal - N850"></div>
   </header>
   <main>
-    <h2>Contract</h2>
-    <p>
-      I, <a href="./introduction.html">David D. James</a>, agree to abide by the terms in my Spring 2026 WEB115-N850 Web
-      Markup and Scripting with my
-      instructor, Asatha Saxena.</p>
+    <table>
+      <tr>
+        <td class="main-text">
+          <div class="box">
+            <h2 class="box-title">Contract</h2>
+            <p>
+              I, <a href="./introduction.html">David D. James</a>, agree to abide by the terms in my Spring 2026
+              WEB115-N850 Web
+              Markup and Scripting with my
+              instructor, Asatha Saxena.</p>
 
-    <p>I understand that all work that I do on my school and personal websites will be publicly available to the world.
-      I will not put information there that is inappropriate for schoolwork, or that I wish to keep private.</p>
+            <p>I understand that all work that I do on my school and personal websites will be publicly available to the
+              world.
+              I will not put information there that is inappropriate for schoolwork, or that I wish to keep private.</p>
 
-    <p>I also understand that it is my work that counts for attendance, not logins or showing up for class. As such,
-      failure to turn in assignments may show as absences.</p>
+            <p>I also understand that it is my work that counts for attendance, not logins or showing up for class. As
+              such,
+              failure to turn in assignments may show as absences.</p>
 
-    <p>Signed: <em>David D. James, 18 January 2026</em></p>
+            <p>Signed: <em>David D. James, 18 January 2026</em></p>
+          </div>
+        </td>
+        <td class="navbar">
+          <div class="box">
+            <h2 class="box-title">Quick Links</h2>
+            <div data-include="./components/navbar.html"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
   </main>
   <footer>
-    <nav>
-      <a href="https://github.com/DJamesCPCC/DJamesCPCC.github.io">Github</a> |
-      <a href="https://djamescpcc.github.io/">Github.io</a> |
-      <a href="https://www.codecademy.com/profiles/ddjamesCPCC">codeacademy</a> |
-      <a href="https://www.freecodecamp.org/djamescpcc">freeCodeCamp</a> |
-      <a href="https://jsfiddle.net/u/SlimeDev18/fiddles/">JSFiddle</a> |
-      <a href="https://www.linkedin.com/in/david-james-b59937246/">LinkedIn</a>
-    </nav>
-    <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
-    <p>Page build by SlimeDev Designs LLC.</p>
+    <div data-include="./components/footer.html"></div>
   </footer>
+  <script src="./scripts/HTMLInclude.js"></script>
+  <script>IncludeHITML();</script>
 </body>
 
 </html>
