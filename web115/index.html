@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-  <div data-include="./components/head.html" data-replace="%title%:David James' Dapper Jackal Home"></div>
+  <title>David James' Dapper Jackal Home</title>
+  <div data-include="./components/head.html"></div>
 </head>
 
 <body>
   <header>
-    <section class="header-container">
+    <div class="header-container">
       <div data-include="./components/header.html" data-replace="%header%:David James' Dapper Jackal - N850"></div>
-    </section>
+    </div>
   </header>
 
   <main>
@@ -38,7 +39,7 @@
     <div data-include="./components/footer.html"></div>
   </footer>
   <script src="./scripts/HTMLInclude.js"></script>
-  <script>includeHTML()</script>
+  <script>includeHTML();</script>
 </body>
 
 </html>

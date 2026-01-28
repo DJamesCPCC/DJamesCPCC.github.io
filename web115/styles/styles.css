@@ -118,8 +118,8 @@ footer {
 }
 
 #intro-photo {
-  width: 300px;
-  height: auto;
+  width: auto;
+  height: 35%;
 }
 
 figure {
@@ -147,6 +147,7 @@ q {
   vertical-align: middle;
   margin-bottom: 15px;
 }
+
 .colorswatch {
   border: 2px solid #000;
   border-radius: 10px;
