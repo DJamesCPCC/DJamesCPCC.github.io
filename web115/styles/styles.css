@@ -21,6 +21,7 @@
 :root {
   --libra-blue: #0191f5;
   --pale-skyblue: #e3f3ff;
+  --dark-skyblue: #81c9ff88;
 }
 
 /* Body */
@@ -152,4 +153,32 @@ q {
   border: 2px solid #000;
   border-radius: 10px;
   padding: 60px;
+}
+
+/* fizzbuzz0.html */
+input[type=text] {
+  background-color: var(--pale-skyblue);
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid var(--dark-skyblue);
+  border-radius: 4px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border: 2px solid var(--dark-skyblue);
+  border-radius: 4px;
+  background-color: var(--pale-skyblue);
+  color: var(--libra-blue);
+  font-family: "Space mono";
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--libra-blue);
+  color: #fff;
 }
