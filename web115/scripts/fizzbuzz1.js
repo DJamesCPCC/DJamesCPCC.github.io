@@ -40,15 +40,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     newBox.classList.add("box");
     newBox.classList.add("box");
-    newBox.id = "fizzbuzz0_list";
-    list.id = "data0";
+    newBox.id = "fizzbuzz1_list";
+    list.id = "data1";
 
     main.appendChild(newBox);
     newBox.appendChild(list);
 
   }, { once: true });
 
-  //
-  // event listener for the submit button that will output a numbered lists from 1 to 140
-  // with a themed word. Every multiple of 3 will output and special word instead of the standard
-  // every multiple of 5 will output 
+  /*
+  * event listener for the submit button that will output a numbered lists from 1 to 140
+  * with a themed word, every multiple of 3 will output and special word instead of the standard
+  * every multiple of 5 will output a different special word instead of the standard
+  * if a number is a multiple of 3 and 5 both special words will be prented
+  */
+  document.getElementById("fizzbuzz1_form").addEventListener('submit', function (event) {
+
+    var text = document.getElementById("data1");
+    var COUNT = 140;
+
+    for (let i = 1; i <= COUNT; i++) {
+      var entries = document.createElement('li');
+      if (i % 3 === 0) {
+        entries.innerHTML = "RUFF!";
+        console.log(`${i} is divsable by 3`);
+        text.appendChild(entries);
+      }
+      if (i % 5 === 0) {
+        entries.innerHTML = entries.innerHTML + " BARK!";
+        console.log(`${i} is divsable by 5`);
+        text.appendChild(entries);
+      }
+      if (i % 3 !== 0 && i % 5 !== 0) {
+        entries.innerHTML = "woof!";
+        console.log(`${i} is not divisable by 3 or 5`);
+        text.appendChild(entries);
+      }
+
+    }
+  });
+});
