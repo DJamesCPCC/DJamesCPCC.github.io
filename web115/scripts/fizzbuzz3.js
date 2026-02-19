@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
    *  greeting message to a personalized one based on the name 
    *  the user submitted.
     */
-  document.getElementById("fizzbuzz2_form").addEventListener('submit', function (event) {
+  document.getElementById("fizzbuzz3_form").addEventListener('submit', function (event) {
 
     // stops the form from taking the default action (submitting and refreshing the page)
     event.preventDefault();
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
    *
    */
 
-  document.getElementById("fizzbuzz2_form").addEventListener('submit', function (event) {
+  document.getElementById("fizzbuzz3_form").addEventListener('submit', function (event) {
 
     const main = document.getElementsByClassName("main-text")[0];
     const newBox = document.createElement('div');
@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     newBox.classList.add("box");
     newBox.classList.add("box");
-    newBox.id = "fizzbuzz2_list";
-    list.id = "data2";
+    newBox.id = "fizzbuzz3_list";
+    list.id = "data3";
 
     main.appendChild(newBox);
     newBox.appendChild(list);
@@ -65,31 +65,27 @@ document.addEventListener('DOMContentLoaded', () => {
   * every multiple of 5 will output a different special word instead of the standard
   * if a number is a multiple of 3 and 5 both special words will be prented
   */
-  document.getElementById("fizzbuzz2_form").addEventListener('submit', function (event) {
+  document.getElementById("fizzbuzz3_form").addEventListener('submit', function (event) {
 
-    var text = document.getElementById("data2");
-    var COUNT = 140;
-    var firstDivisor = 3;
-    var secondDivisor = 5;
+    var text = document.getElementById("data3");
+    const COUNT = 140;
+    const divisors = { 3: "RUFF!", 5: " BARK!", 7: " BANG!" };
 
     for (let i = 1; i <= COUNT; i++) {
       var entries = document.createElement('li');
-      if (checkDivisable(i, firstDivisor)) {
-        entries.innerHTML = "RUFF!";
-        console.log(`${i} is divsable by 3`);
-        text.appendChild(entries);
+      for (const [divisor, word] of Object.entries(divisors)) {
+        if (!checkDivisable(i, divisor)) {
+          entries.innerHTML = entries.innerHTML + "woof!";
+          text.appendChild(entries);
+          console.log(` ${i} is not divisable by any given divisor`);
+          break;
+        }
+        else if (checkDivisable(i, divisor)) {
+          entries.innerHTML = entries.innerHTML + word;
+          text.appendChild(entries);
+          console.log(`${i} was divisable by ${divisor}; ${word}`);
+        }
       }
-      if (checkDivisable(i, secondDivisor)) {
-        entries.innerHTML = entries.innerHTML + " BARK!";
-        console.log(`${i} is divsable by 5`);
-        text.appendChild(entries);
-      }
-      if (!checkDivisable(i, firstDivisor) && !checkDivisable(i, secondDivisor)) {
-        entries.innerHTML = "woof!";
-        console.log(`${i} is not divisable by 3 or 5`);
-        text.appendChild(entries);
-      }
-
     }
   });
 });
