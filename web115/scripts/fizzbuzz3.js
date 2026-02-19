@@ -74,17 +74,16 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 1; i <= COUNT; i++) {
       var entries = document.createElement('li');
       for (const [divisor, word] of Object.entries(divisors)) {
-        if (!checkDivisable(i, divisor)) {
-          entries.innerHTML = entries.innerHTML + "woof!";
-          text.appendChild(entries);
-          console.log(` ${i} is not divisable by any given divisor`);
-          break;
-        }
-        else if (checkDivisable(i, divisor)) {
+        if (checkDivisable(i, divisor)) {
           entries.innerHTML = entries.innerHTML + word;
           text.appendChild(entries);
           console.log(`${i} was divisable by ${divisor}; ${word}`);
         }
+      }
+      if (entries.innerHTML === '') {
+        entries.innerHTML = 'woof!';
+        text.appendChild(entries);
+        console.log(`${i} was not divisable by any divisor`);
       }
     }
   });
