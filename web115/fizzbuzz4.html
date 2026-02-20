@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>David James' Dapper Jackal Home</title>
+  <script src="./scripts/fizzbuzz4.js" defer></script>
+</head>
+
+<body>
+  <div data-include="./components/head.html"></div>
+  <header>
+    <div class="header-container">
+      <div data-include="./components/header.html" data-replace="%header%:Fizz Buzz 4"></div>
+    </div>
+  </header>
+
+  <main>
+    <table>
+      <tr>
+        <td class="main-text">
+          <div class="box" id="fizzbuzz4_box">
+            <h2 class="box-title" id="greeting">Welcome to Jackal Repairs!</h2>
+            <form id="fizzbuzz4_form">
+              <input type="text" id="first_name" placeholder="Enter your first name" pattern="[A-Za-z]{3,15}" required>
+              <input type="text" id="middle_initial" placeholder="M" pattern="[A-Za-z]{1}">
+              <input type="text" id="last_name" placeholder="Enter your last name" pattern="[A-Za-z]{3,15}">
+              <label for="fizzbuzz_count">How high would you like to count?</label>
+              <input type="number" id="fizzbuzz_count" value="125" min="1" required>
+              <div class="divisor_info">
+                <label for="divisor_one_num">Enter the first divisor:</label>
+                <input type="number" id="divisor_one_num" value="3">
+                <label for="divisor_one_word">Enter the first divisor output:</label>
+                <input type="text" id="divisor_one_word" value="RUFF!">
+              </div>
+              <div class="divisor_info">
+                <label for="divisor_two_num">Enter the second divisor:</label>
+                <input type="number" id="divisor_two_num" value="5">
+                <label for="divisor_two_word">Enter the second divisor output:</label>
+                <input type="text" id="divisor_two_word" value="BARK!">
+              </div>
+              <div class="divisor_info">
+                <label for="divisor_three_num">Enter the third divisor:</label>
+                <input type="number" id="divisor_three_num" value="7">
+                <label for="divisor_third_word">Enter the third divisor output:</label>
+                <input type="text" id="divisor_third_word" value="BANG!">
+              </div>
+              <div class="divisor_info">
+                <label for="default_word">Enter the default output:</label>
+                <input type="text" id="default_word" placeholder="woof!">
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </td>
+        <td class="navbar">
+          <div class="box">
+            <h2 class="box-title">Quick Links</h2>
+            <div data-include="./components/navbar.html"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </main>
+  <footer>
+    <div data-include="./components/footer.html"></div>
+  </footer>
+  <script src="./scripts/HTMLInclude.js"></script>
+</body>
+
+</html>
