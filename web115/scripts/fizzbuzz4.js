@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.getElementById("greeting").innerHTML = `Welcome to Jackal Repairs, ${fullName}!`;
-    console.log("Message has been changed");
   });
 
   /*
@@ -67,31 +66,41 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById("fizzbuzz4_form").addEventListener('submit', function (event) {
 
     var text = document.getElementById("data4");
-    const DEFAULTWORD = document.getElementById("default_word").value.trim(); 
+    text.innerHTML = "";
+    const DEFAULTWORD = document.getElementById("default_word").value.trim();
     const COUNT = document.getElementById("fizzbuzz_count").value.trim();
-    const DIVONENUM = document.getElementById("divisor_one_num");
-    const DIVONEWORD = document.getElementById("divisor_one_word");
-    const DIVTWONUM = document.getElementById("divisor_two_num");
-    const DIVTWOWORD = document.getElementById("divisor_two_word");
-    const DIVTHREENUM = document.getElementById("divisor_three_num");
-    const DIVTHREEWORD = document.getElementById("divisor_third_word");
+    const DIVONENUM = document.getElementById("divisor_one_num").value.trim();
+    const DIVONEWORD = document.getElementById("divisor_one_word").value.trim();
+    const DIVTWONUM = document.getElementById("divisor_two_num").value.trim();
+    const DIVTWOWORD = document.getElementById("divisor_two_word").value.trim();
+    const DIVTHREENUM = document.getElementById("divisor_three_num").value.trim();
+    const DIVTHREEWORD = document.getElementById("divisor_third_word").value.trim();
 
-    const divisors = { DIVONENUM: DIVONEWORD, DIVTWONUM: DIVTWOWORD, DIVTHREENUM: DIVTHREEWORD };
-console.log(`Count: ${COUNT}`);
+    const divisors = { [DIVONENUM]: DIVONEWORD, [DIVTWONUM]: DIVTWOWORD, [DIVTHREENUM]: DIVTHREEWORD };
+    console.log(`Count: ${COUNT}`);
+
+    console.log(`1st Divisor: ${DIVONENUM}`);
+    console.log(`2nd Divisor: ${DIVTWONUM}`);
+    console.log(`3rd Divisor: ${DIVTHREENUM}`);
+
+    console.log(`1st Word: ${DIVONEWORD}`);
+    console.log(`2nd Word: ${DIVTWOWORD}`);
+    console.log(`3rd Word: ${DIVTHREEWORD}`);
+
     for (let i = 1; i <= COUNT; i++) {
-      console.log("Inside the loop");
       var entries = document.createElement('li');
       for (const [divisor, word] of Object.entries(divisors)) {
+        console.log(`Divisor: ${divisor}\tWord: ${word}\n`);
         if (checkDivisable(i, divisor)) {
           entries.innerHTML = entries.innerHTML + word;
           text.appendChild(entries);
-          console.log(`${i} was divisable by ${divisor}; ${word}`);
+          //console.log(`${i} was divisable by ${divisor}; ${word}`);
         }
       }
       if (entries.innerHTML === '') {
         entries.innerHTML = DEFAULTWORD;
         text.appendChild(entries);
-        console.log(`${i} was not divisable by any divisor`);
+        //console.log(`${i} was not divisable by any divisor`);
       }
     }
   });

@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById("fizzbuzz2_form").addEventListener('submit', function (event) {
 
     var text = document.getElementById("data2");
+    text.innerHTML = "";
     var COUNT = 140;
     var firstDivisor = 3;
     var secondDivisor = 5;

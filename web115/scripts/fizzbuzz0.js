@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const firstName = document.getElementById("first_name").value.trim();
     var text = document.getElementById('data0');
+    text.innerHTML = "";
+
     let limit = prompt(`How high do you want to count, ${firstName}?`);
     for (let i = 1; i <= limit; i++) {
       var entries = document.createElement("li");

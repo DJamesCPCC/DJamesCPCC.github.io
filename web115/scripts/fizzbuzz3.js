@@ -68,6 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById("fizzbuzz3_form").addEventListener('submit', function (event) {
 
     var text = document.getElementById("data3");
+    text.innerHTML = "";
+
     const COUNT = 140;
     const divisors = { 3: "RUFF!", 5: " BARK!", 7: " BANG!" };
 

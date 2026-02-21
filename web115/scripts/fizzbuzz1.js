@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById("fizzbuzz1_form").addEventListener('submit', function (event) {
 
     var text = document.getElementById("data1");
+    text.innerHTML = "";
     var COUNT = 140;
 
     for (let i = 1; i <= COUNT; i++) {
